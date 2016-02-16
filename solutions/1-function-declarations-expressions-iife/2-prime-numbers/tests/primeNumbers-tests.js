@@ -8,13 +8,13 @@ describe('Prime numbers', () => {
             assert.isDefined(isPrime);
             done();
         });
-        it('should return true is the number is prime', function (done) {
+        it('should return true is the number is prime', (done) => {
             assert.isTrue(isPrime(5));
             assert.isTrue(isPrime(17));
             assert.isTrue(isPrime(19));
             done();
         });
-        it('should return false is the number is not prime', function (done) {
+        it('should return false is the number is not prime', (done) => {
             assert.isFalse(isPrime(15));
             assert.isFalse(isPrime(25));
             assert.isFalse(isPrime(40));
@@ -22,7 +22,7 @@ describe('Prime numbers', () => {
         });
     });
     describe('prime Function', () => {
-        it('should exist', function (done) {
+        it('should exist', (done) => {
             assert.isDefined(prime);
             done();
         });
