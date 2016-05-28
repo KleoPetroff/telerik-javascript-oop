@@ -1,6 +1,6 @@
 import chai from 'chai';
 const assert = chai.assert;
-import {prime, isPrime} from '../primeNumbers';
+import { prime, isPrime } from '../primeNumbers';
 
 describe('Prime numbers', () => {
     describe('isPrime Function', () => {

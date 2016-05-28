@@ -7,7 +7,7 @@ const isPrime = (number) => {
 };
 
 const prime = (min, max) => {
-    let result = [];
+    const result = [];
 
     if (max === 1) return null;
 

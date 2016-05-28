@@ -4,7 +4,7 @@
  * @returns {number | null}
  */
 
-const sumArray = function (array) {
+const sumArray = function sumArray(array) {
     let result;
 
     if (arguments.length === 0) throw Error('No arguments passed');
@@ -18,6 +18,7 @@ const sumArray = function (array) {
             if (typeof prev === 'number' && typeof curr === 'number') {
                 return prev + curr;
             }
+            return false;
         });
 
     if (!result) throw Error('Some elements of the argument is not convertible to Number');

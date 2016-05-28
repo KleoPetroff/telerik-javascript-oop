@@ -1,5 +1,5 @@
 import chai from 'chai';
-let assert = chai.assert;
+const assert = chai.assert;
 import sumArray from '../sumOfNumbers';
 
 describe('Sum of Numbers', () => {
@@ -15,11 +15,11 @@ describe('Sum of Numbers', () => {
         assert.throw(() => { sumArray([1, 2, 44, [2, 4]]); }, Error, 'Some elements of the argument is not convertible to Number');
         done();
     });
-    it('should return the sum of all number elements of the array', function (done) {
+    it('should return the sum of all number elements of the array', (done) => {
         assert.equal(sumArray([1, 2, 3, 4, 5, 6]), 21);
         done();
     });
-    it('should convert strings to numbers and sum them up', function (done) {
+    it('should convert strings to numbers and sum them up', (done) => {
         assert.equal(sumArray(['1', '2', '3']), 6);
         done();
     });
