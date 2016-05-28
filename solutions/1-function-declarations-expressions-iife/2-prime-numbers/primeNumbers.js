@@ -1,7 +1,5 @@
 const isPrime = (number) => {
-    let iterator;
-
-    for (iterator = 2; iterator <= Math.sqrt(number); iterator++) {
+    for (let iterator = 2; iterator <= Math.sqrt(number); iterator++) {
         if (number % iterator === 0) return false;
     }
 
@@ -9,12 +7,11 @@ const isPrime = (number) => {
 };
 
 const prime = (min, max) => {
-    let result = [],
-        iterator;
+    let result = [];
 
     if (max === 1) return null;
 
-    for (iterator = min; iterator <= max; iterator++) {
+    for (let iterator = min; iterator <= max; iterator++) {
         if (isPrime(iterator) && iterator > 1) result.push(iterator);
     }
 
