@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/KleoPetroff/telerik-javascript-oop#readme",
   "devDependencies": {
-    "babel-cli": "^6.5.1",
+    "babel-cli": "^6.9.0",
     "babel-core": "^6.5.2",
     "babel-eslint": "^6.0.4",
     "babel-preset-es2015": "^6.5.0",
