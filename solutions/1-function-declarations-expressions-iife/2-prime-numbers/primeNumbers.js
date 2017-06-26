@@ -1,22 +1,21 @@
 const isPrime = (number) => {
-    for (let iterator = 2; iterator <= Math.sqrt(number); iterator++) {
-        if (number % iterator === 0) return false;
-    }
+  for (let iterator = 2; iterator <= Math.sqrt(number); iterator++) {
+    if (number % iterator === 0) return false;
+  }
 
-    return true;
+  return true;
 };
 
 const prime = (min, max) => {
-    const result = [];
+  const result = [];
 
-    if (max === 1) return null;
+  if (max === 1) return null;
 
-    for (let iterator = min; iterator <= max; iterator++) {
-        if (isPrime(iterator) && iterator > 1) result.push(iterator);
-    }
+  for (let iterator = min; iterator <= max; iterator++) {
+    if (isPrime(iterator) && iterator > 1) result.push(iterator);
+  }
 
-    return result;
+  return result;
 };
 
-
-export { prime, isPrime } ;
+export {prime, isPrime};

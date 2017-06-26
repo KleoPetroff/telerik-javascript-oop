@@ -5,25 +5,25 @@
  */
 
 const sumArray = function sumArray(array) {
-    let result;
+  let result;
 
-    if (arguments.length === 0) throw Error('No arguments passed');
-    else if (array.length === 0) result = null;
+  if (arguments.length === 0) throw Error('No arguments passed');
+  else if (array.length === 0) result = null;
 
-    result = array
-        .map(item => {
-            return typeof item !== 'object' ? parseFloat(item) : null;
-        })
-        .reduce((prev, curr) => {
-            if (typeof prev === 'number' && typeof curr === 'number') {
-                return prev + curr;
-            }
-            return false;
-        });
+  result = array
+    .map((item) => {
+      return typeof item !== 'object' ? parseFloat(item) : null;
+    })
+    .reduce((prev, curr) => {
+      if (typeof prev === 'number' && typeof curr === 'number') {
+        return prev + curr;
+      }
+      return false;
+    });
 
-    if (!result) throw Error('Some elements of the argument is not convertible to Number');
+  if (!result) throw Error('Some elements of the argument is not convertible to Number');
 
-    return result;
+  return result;
 };
 
 export default sumArray;
